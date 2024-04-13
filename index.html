@@ -6,6 +6,7 @@
   <link rel="icone" href="img/icones-gratuites.jpg">
   <title>porfolio Hebert Valentin</title>
   <link rel="stylesheet" href="menu3.css">
+  <link rel="stylesheet" href="respon.css">
 </head>
 
 
@@ -125,7 +126,7 @@
       <h2 class="Acueil">Formation</h2>
 
       <p>Certification ANSSI 2023-2024 </p>
-      <br>
+     <p class="lieux"> secnumacademie.gouv </p>
 
       <p>BUT informatique 2022-ajd </p>
       <p class="lieux">iut de Lille , Villeneuve d'ascq </p>
@@ -138,35 +139,35 @@
     <div id="experience-redirection"></div>
     <br>
 
-    <article id="experience">
-      <div class="experiencing">
-        <h2 class="Acueil">Experience</h2>
-      </div>
-      <h3 class="titre">jeu ludo-éducatif</h3>
-      <p>ce projet été de concevoir et developer un jeu destiner pour les enfant pour mettre en pratique le langage java
-        de façon itératif </p>
-      <div><a href="projet1.html">en savoir plus</a> </div>
-      <h3 class="titre">
-        Chasse au Monstre</h3>
-      <p>ce projet été de concevoir et developer un jeu en java pour mettre en pratique les connaissance acquise durant
-        les 2 premier semestre</p>
-      <div><a href="projet2.html">en savoir plus</a></div>
-      <h3 class="titre">
-        Site Web pour le Covoiturage et la Location de Véhicules</h3>
-      <p>le but de ce projet été dans l'objetif de trouvé une solution pour une entreprise du numérique pour crée un
-        service de covoiturage avec une maquette wordPress puis en html css </p>
-      <div><a href="projet3.html">en savoir plus</a></div>
-      <h3 class="titre">
-        Base de Données pour les Jeux Olympiques</h3>
-      <p>ce projet avait pour but a partir d'une base de donné des jeux Olympiques de crée et ventiller les donné de la
-        table pour amelioré l'efficacité de la base de donné </p>
-      <div><a href="projet4.html">en savoir plus</a></div>
-      <h3 class="titre">
-        Déploiement d'Applications Communicantes </h3>
-      <p> ce projet vise à optimiser les communications internes et externes, incluant des échanges synchrones et
-        asynchrones, avec une solution basée sur le standard Matrix. </p>
-      <div><a href="projet5.html">en savoir plus</a></div>
 
+    <article id ="experience">
+      <h2 class="Acueil">Experience</h2>
+      <div class="experiencing">
+        <h3 class="titre">Semestre 1</h3>
+        <div><a href="semestre1.html">en savoir plus</a></div>
+      </div>
+
+      <div class="experiencing">
+        <h2 class="titre">Semestre 2</h2>
+        <div><a href="semestre2.html">en savoir plus</a>
+        </div>
+      </div>
+
+      <div class="experiencing">
+        <h2 class="titre">Semestre 3</h2>
+        <div><a href="semestre3.html">en savoir plus</a>
+        </div>
+      </div>       
+   
+
+    
+    <div class="experiencing">
+      <h2 class="titre">Semestre 4</h2>
+      <div><a href="semestres4.html">en savoir plus</a>
+      </div>
+    </div>       
+  </article>
+  
 
 
     </article>
@@ -189,19 +190,27 @@
     </article>
     <div id="contact-redirection"></div>
 
-    <article id="contact">
-      <h1 class="Acueil">contact</h1>
+    
+    <h2 id="titles">Contactez-moi</h2>
 
-      <p><img src="img/mail.png" alt=""> <a data-auto-recognition="true" href="mailto:valentin.hebert00@gmail.com">valentin.hebert00@gmail.com</a></p>
-      <p>
-        <img src="img/tel.png" alt="">
-        06 19 99 95 26
-      </p>
-      <p><img src="img/linkedin.png" alt=""><a
-          href="https://www.linkedin.com/in/valentin-hebert-832675236/">Linkedin</a></p>
-      <a class="cv" href="https://nextcloud.univ-lille.fr/index.php/apps/files/?dir=/cv&openfile=249321765">cv</a>
-          
-    </article>
+    <div class="contact-container">
+        <div class="contact-info">
+            <img src="./img/gmail.png" alt="Email Icon">
+            <p>Email : <a href="mailto:monadresse@mail.com">valentin.hebert00@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info">
+            <img src="./img/université.png" alt="Univ logo">
+            <p>Univ : <a href="mailto:monadresse@mail.com" target="_blank">valentin.hebert2.etu@univ-lille.fr</a></p>
+        </div>
+
+        <div class="contact-info">
+            <img src="./img/linkedin.png" alt="Linkedin Icon">
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/valentin-hebert-832675236/" target="_blank">Mon Profil</a></p>
+        </div>
+
+    </div>
+
 
 
 
@@ -210,11 +219,13 @@
 </body>
 
 <footer>
-  <div>
+  <div> 
     <p>"J'ai toujours cru qu'il ne fallait jamais abandonner et qu'il fallait toujours continuer à se battre même
       lorsqu'il n'y avait qu'une toute petite chance." (michael schumacher)</p>
-
+ <a href="./img/cv (1).pdf" download="CV">
+      <img src="./img/cv_logo.png" alt="">  </a>
   </div>
+ 
 
 </footer>
 
@@ -224,5 +235,6 @@
 
 
 <script src="app.js"> </script>
+<script src="script.js"> </script>
 
 </html>
