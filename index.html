@@ -1,240 +1,314 @@
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-
-  <link rel="icone" href="img/icones-gratuites.jpg">
-  <title>porfolio Hebert Valentin</title>
-  <link rel="stylesheet" href="menu3.css">
-  <link rel="stylesheet" href="respon.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./asset/téléchargement.png">
 </head>
 
-
-
 <body>
+    <header>
+        <div class="card">
+            <div class="pic">
+                <i id="img"></i>
+            </div>
+
+            <div class="card-content">
+                <h2 class="card-title">Valentin Hebert</h2>
+                <p class="card-description">Étudiant en BUT 3</p>
+                <div class="sm">
+                    <a class="lien" href="https://www.instagram.com/val_hebt/">
+                        <img class="IMG" src="./asset/insta.png" alt="Instagram">
+                    </a>
+                    <a class="lien" href="https://www.linkedin.com/in/valentin-hebert-832675236/">
+                        <img class="IMG" src="./asset/link.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <button class="card-buttons" >Me
+                    Contacter</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="bluredbottom"></div>
+        <div class="sujet">
+            <div class="aboutme">
+                <div>
+                    <h2>À propos de moi</h2>
+                    <blockquote>
+                        <p>Je suis un étudiant en troisième année de BUT informatique à l'Université de Lille.</p>
+                    </blockquote>
+                </div>
+                <div>
+                    <h2>Pourquoi Moi ?</h2>
+                    <blockquote>
+                        <p>
+                            Je suis passionné par l'informatique, j'aime apprendre de nouvelles choses et je suis
+                            toujours prêt à relever de nouveaux défis.
+                            <br><br>
+                            Un mot pour me qualifier : <strong>Kaisen</strong>
+                        </p>
+                    </blockquote>
+                </div>
+                <div>
+                    <h2>Compétence</h2>
+                    <div class="skills" >
+                        <div class="skill" data-description="Conception, gestion et configuration des réseaux : administration des équipements Cisco, mise en place et segmentation des réseaux avec VLAN, configuration du routage statique et dynamique (OSPF, BGP) pour optimiser la communication et la sécurité.">
+                            <img src="./asset/depositphotos_239719906-stock-photo-networking-as-global-concept.jpg"
+                                alt="Réseau">
+                            <div class="bar">
+                                <h3>Réseau</h3>
+                            </div>
+                        </div>
+
+                        <div class="skill" data-description="Développement et scripting en Python, Java et Bash : conception d’applications, automatisation de tâches, et gestion des systèmes avec des scripts adaptés aux environnements Linux et Windows. " >
+                            <img src="./asset/images.jpg" alt="Programmation">
+                            <div class="bar">
+                                <h3>Programmation</h3>
+                            </div>
+                        </div>
+                        <div class="skill" data-description="Administration des systèmes Linux et Windows : gestion des utilisateurs et des permissions, configuration des services réseau, supervision, automatisation des tâches et sécurisation des environnements.">
+                            <img src="./asset/sys.jpg" alt="Système">
+                            <div class="bar">
+                                <h3>Système</h3>
+                            </div>
+                        </div>
+                        <div class="skill" data-description="Gestion des bases de données SQL : conception, administration et optimisation des bases de données, écriture de requêtes complexes, gestion des index et des transactions, ainsi que sécurisation des accès.">
+                            <img src="./asset/bdd.jpg" alt="Base de données">
+                            <div class="bar">
+                                <h3>Base de données</h3>
+                            </div>
+                        </div>
+                        <div class="skill" data-description="Virtualisation et infrastructure as code avec Vagrant, Docker et Terraform : déploiement et gestion d’environnements virtualisés, création de conteneurs, orchestration des services et automatisation de l’infrastructure.">
+                            <img src="./asset/Virtualisation-entreprise.jpeg" alt="virtualisation">
+                            <div class="bar">
+                                <h3>virtualisation</h3>
+                            </div>
+                        </div>
+
+                        <div class="skill" data-description="La compétence CI/CD permet d'automatiser l'intégration, le test et le déploiement des applications afin d'assurer des mises en production rapides, fiables et continues.">
+                            <img src="./asset/CiCD.png" alt="CI CD automatisation">
+                            <div class="bar">
+                                <h3>CI CD automatisation </h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h2 id="popup-title"></h2>
+                        <p id="popup-text"></p>
+                    </div>
+                </div>
 
 
-  <div class="loader">
-    <span class="lettre">C</span>
-    <span class="lettre">H</span>
-    <span class="lettre">A</span>
-    <span class="lettre">R</span>
-    <span class="lettre">G</span>
-    <span class="lettre">E</span>
-    <span class="lettre">M</span>
-    <span class="lettre">E</span>
-    <span class="lettre">N</span>
-    <span class="lettre">T</span>
-    <span class="loading"></span>
-  </div>
 
 
-
-  <!-- navBar-->
-  <nav>
-    <div class="menu">
-      <div></div>
-      <a href="#accueil-redirection">Accueil</a>
-      <a href="#formation-redirection">Formation</a>
-      <a href="#experience-redirection">Projet</a>
-      <a href="#centre_interet-redirection">Centre d'intéret</a>
-      <a href="#contact-redirection">Contact</a>
-      <div></div>
+                <div class="techno">
+                    <h2>Technologies</h2>
+                    <div class="techno-grid">
+                        <div class="tech-item">
+                            <img src="./asset/Ansible_Logo.png" alt="Java">
+                            
+                        </div>
+                        <div class="tech-item">
+                            <img src="./asset/python.png" alt="Python">
+                            
+                        </div>
+                        <div class="tech-item">
+                            <img src="./asset/postgres.png" alt="CSS">
+                            
+                        </div>
+                      
+                        <div class="tech-item">
+                            <img src="./asset/bash.png" alt="Bash">
+                            
+                        </div>
+                        <div class="tech-item">
+                            <img src="./asset/unix.png" alt="Unix">
+                            
+                        </div>
+                        <div class="tech-item">
+                            <img src="./asset/docker.png" alt="Docker">
+                            
+                        </div>
+                        <div class="tech-item">
+                            <img src="./asset/vagrant.png" alt="Vagrant">
+                            
+                        </div>
+                        <div class="tech-item">
+                            <img src="./asset/terraform.png" alt="Terraform">
+                            
+                            
+                        </div>
+                        <div class="tech-item">
+                            <img src="./asset/GitHub-Logo.png" alt="Git">
+                    </div>
+                </div>
+                
+        </div>
     </div>
-
-  </nav>
-
-  <div id="board">
-    <div>
-      <img src="img/IMG-0028.jpg" alt="photo">
-      <h3>valentin hebert</h3>
-      <h4>
-        etudiant en BUT infomatique
-      </h4>
-
-    </div>
-  </div>
-
-
-  <!-- Contenu de la page -->
-  <div id="content">
-    <div id="accueil-redirection"></div>
-    <br>
-    <article id="accueil">
-
-      <h1 class="Acueil">accueil</h1>
-
-
-      <p>Je suis actuellement en 2ème année dans le parcours "Déploiement d'Applications Communicantes et Sécurisées".
-        Ce qui m'intéresse particulièrement dans ce domaine, c'est de trouver les failles de sécurité au sein d'un
-        système informatique et
-        de tout mettre en œuvre pour assurer l'intégrité, la disponibilité, la visibilité et la stabilité du système
-        informatique.
-      </p>
-
-
-
-    </article>
-
-    <h2 class="Coemp">competence</h2>
-
-
-    <div class="competance">
-      <div class="java">
-        <img src="img/programmation.jpg" alt="java">
-        <div class="div-java">
-          <h3>programmation</h3>
+    <h1 class="section-title">
+        <span>Formation</span>
+    </h1>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content left">
+                <h3>🎓 Lycée</h3>
+                <p>Obtention du Bac en <strong>2022</strong>. Spécialités : Mathématiques,physique, SIN.</p>
+            </div>
         </div>
-      </div>
-
-      <div class="bdd">
-        <img src="img/bdd.jpg" alt="java">
-        <div class="div-bdd">
-          <h3>base de donné </h3>
+        <div class="timeline-item">
+            <div class="timeline-content right">
+                <h3>📌 BUT 1ère année</h3>
+                <p>Découverte des bases en programmation, systèmes et réseaux.</p>
+            </div>
         </div>
-      </div>
-
-
-      <div class="reseaux">
-        <img src="img/resaeu.jpg" alt="java">
-        <div class="div-reseau">
-          <h3>reseaux </h3>
-        </div>
-      </div>
-
-      <div class="html">
-        <img src="img/front end.jpg" alt="java">
-        <div class="div-html">
-          <h3>front end </h3>
-        </div>
-      </div>
-
-      <div class="systeme">
-        <img src="img/systeme.png" alt="java">
-        <div class="div-system">
-          <h3>systeme </h3>
-        </div>
-      </div>
-
-    </div>
-
-
-    <div id="formation-redirection"></div>
-    <br>
-
-    <article id=formation>
-      <h2 class="Acueil">Formation</h2>
-
-      <p>Certification ANSSI 2023-2024 </p>
-     <p class="lieux"> secnumacademie.gouv </p>
-
-      <p>BUT informatique 2022-ajd </p>
-      <p class="lieux">iut de Lille , Villeneuve d'ascq </p>
-
-      <p> bacaleurat Sti2d (mention BIEN) 2019-2022</p>
-      <p class="lieux"> lycéé frederic Ozanam , Lille </p>
-    </article>
-
-
-    <div id="experience-redirection"></div>
-    <br>
-
-
-    <article id ="experience">
-      <h2 class="Acueil">Experience</h2>
-      <div class="experiencing">
-        <h3 class="titre">Semestre 1</h3>
-        <div><a href="semestre1.html">en savoir plus</a></div>
-      </div>
-
-      <div class="experiencing">
-        <h2 class="titre">Semestre 2</h2>
-        <div><a href="semestre2.html">en savoir plus</a>
-        </div>
-      </div>
-
-      <div class="experiencing">
-        <h2 class="titre">Semestre 3</h2>
-        <div><a href="semestre3.html">en savoir plus</a>
-        </div>
-      </div>       
-   
-
     
-    <div class="experiencing">
-      <h2 class="titre">Semestre 4</h2>
-      <div><a href="semestres4.html">en savoir plus</a>
-      </div>
-    </div>       
-  </article>
-  
-
-
-    </article>
-    <div id="centre_interet-redirection"></div>
-    <br>
-    <article id="centre_interet">
-      <h1 class="Acueil">Centre D'interet</h1>
-
-      <img src="img/IMG_2713.gif" alt="golf">
-
-      <div> <img class="dav1" src="img/montage.jpg" alt="montage">
-        <img class="dav" src="img/vélo.jpg" alt="velo">
-      </div>
-
-      <video controls width="360">
-        <source src="img/Bethune_-_26_aout_2023.MOV" type="video/webm" />
-
-      </video>
-
-    </article>
-    <div id="contact-redirection"></div>
-
+        <div class="timeline-item">
+            <div class="timeline-content left">
+                <h3>🚀 BUT 2ème année</h3>
+                <p>Approfondissement en administration réseau, cybersécurité et gestion de projet.</p>
+            </div>
+        </div>
     
-    <h2 id="titles">Contactez-moi</h2>
-
-    <div class="contact-container">
-        <div class="contact-info">
-            <img src="./img/gmail.png" alt="Email Icon">
-            <p>Email : <a href="mailto:monadresse@mail.com">valentin.hebert00@gmail.com</a></p>
+        <div class="timeline-item">
+            <div class="timeline-content right">
+                <h3>🏆 BUT 3ème année</h3>
+                <p>Spécialisation en sécurité des systèmes et réseaux, projet de fin d’études et stage.</p>
+            </div>
         </div>
+    </div>
+    
 
-        <div class="contact-info">
-            <img src="./img/université.png" alt="Univ logo">
-            <p>Univ : <a href="mailto:monadresse@mail.com" target="_blank">valentin.hebert2.etu@univ-lille.fr</a></p>
+
+    <div class="Portfolio content">
+        <section id="Portfolio" class="boxcontainer">
+            <h1 class="section-title">
+                <span>Portfolio</span>
+            </h1>
+            <div class="portfoliogrid">
+                <a class="projet-box project-1" href="https://github.com/thedeku-coder/chasse-au-montre">
+                    <div class="overlay">
+                        <img src="./asset/GitHub-Logo.png" alt="Project 1">
+                    </div>
+                    <div class="project-title">Chasse au monstre</div>
+                </a>
+                <a class="projet-box project-2" href="https://github.com/thedeku-coder/deploiment-odoo">
+                    <div class="overlay">
+                        <img src="./asset/GitHub-Logo.png" alt="Project 2">
+                    </div>
+                    <div class="project-title"> deploiment de odoo </div>
+                </a>
+                <a class="projet-box project-3" href="https://github.com/thedeku-coder/evolution-infra">
+                    <div class="overlay">
+                        <img src="./asset/GitHub-Logo.png" alt="Project 3">
+                    </div>
+                    <div class="project-title">evolution infrastruture</div>
+                </a>
+                <a class="projet-box project-4" href="">
+                    <div class="overlay">
+                        <img src="./asset/GitHub-Logo.png" alt="Project 3">
+                    </div>
+                    <div class="project-title">Projet Agile </div>
+                </a>
+                
+                <!-- Add more project boxes as needed -->
+            </div>
+        </section>
+        <div>
+            <h1 class="section-title">
+                <span>Experience professionel</span>
+            </h1>
+            <div class="experience">
+                <div class="experiences">
+                    <h3>Stage de fin d'étude deuxieme année </h3>
+                    <H4>avril 2024 - juin 2024</H4>
+                    <p>Stage de fin d'étude chez <strong>sweeek (wambrechie)</strong> en tant que <strong>gestionnaire de parc informatique</strong> </p>
+                    <button class="card-button" data-info="
+                        <strong>Mission 1:</strong> création d'une GPO écran de verrouillage <br><br>
+                        <strong>Mission 2:</strong> gestion utilisateur sur Active Directory .<br><br>
+                        <strong>Mission 3:</strong> création d'un script gestion des licences google workspace <br><br>
+                        <strong>Mission 4:</strong> creation d'une image window 11 pour les faire tournée sur des vieux pc fixe<br><br>
+                        <strong>Mission 5:</strong> enregistrement des badge rfid pour le portique de l'entreprise
+                        <h4>Technologies utilisées :</h4>  <ul>
+                        <li><img src='./asset/python.png' alt='Python' width='20'> Python</li>
+                        <li><img src='./asset/AD.png' alt='AD' width='20'> AD window</li>
+                        <li><img src='./asset/postgres.png' alt='postgres' width='20'> Postgresql </li>
+                        <li><img src='./asset/VirtualBox.png' alt='virtualBox' width='20'> VirtualBox</li>
+                        <li><img src='./asset/teamviewer.png' alt='Teamviewer' width='20'> Teamviewer</li>
+                        <li><img src='./asset/Fortinet.png' alt='Teamviewer' width='20'> Fortinet </li>
+                        ">en savoir plus</button> 
+                </div>
+            </div>
+            <div class="experience">
+                <div class="experiences">
+                    <h3>intérim dans une equipe informatique </h3>
+                    <H4>juillet 2024 - août 2024</H4>
+                    <p>Intérim chez <strong>sade (rouvroy)</strong> en tant que <strong>Administrateur réseau </strong> </p>
+                    <button class="card-button" data-info="
+                        <strong>Mission 1:</strong> dépollution des baies réseau<br><br>
+                        <strong>Mission 2:</strong> identification des prise de brassage réseau au sein des antenne de sade Nord .<br><br>
+                        <strong>Mission 3:</strong> configuration des tablette pour les conducteur de travaux <br><br>
+                        <h4>Technologies utilisées :</h4>" >en savoir plus</button>
+                </div>
+                
+            </div>
+          <!-- Popup latérale -->
+<div id="popup-lateral" class="popup-side">
+    <span class="close" onclick="closePopup('popup-lateral')">&times;</span>
+    <h2>Informations supplémentaires</h2>
+    <p id="popup-description"></p>
+</div>
+
+
+
+
         </div>
-
-        <div class="contact-info">
-            <img src="./img/linkedin.png" alt="Linkedin Icon">
-            <p>LinkedIn : <a href="https://www.linkedin.com/in/valentin-hebert-832675236/" target="_blank">Mon Profil</a></p>
         </div>
+    </div>
+    
+    
+    </main>
 
+    <div class="call" id="contact-form">
+        <h2 class="la">Me Contacter</h2>
+        <form action="mail.js">
+            <p>
+                <label for="nom">Nom de la société</label>
+                <input type="text" id="nom" name="nom" required>
+                <span></span>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span></span>
+            </p>
+            <p>
+                <label for="tel">Numéro de téléphone</label>
+                <input type="tel" id="tel" name="tel" required>
+                <span></span>
+            </p>
+            <p>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <span></span>
+            </p>
+            <p>
+                <button type="submit">Envoyer</button>
+            </p>
+        </form>
     </div>
 
-
-
-
-
-  </div>
+    <script src="script.js"></script>
 </body>
-
-<footer>
-  <div> 
-    <p>"J'ai toujours cru qu'il ne fallait jamais abandonner et qu'il fallait toujours continuer à se battre même
-      lorsqu'il n'y avait qu'une toute petite chance." (michael schumacher)</p>
- <a href="./img/cv (1).pdf" download="CV">
-      <img src="./img/cv_logo.png" alt="">  </a>
-  </div>
- 
-
-</footer>
-
-
-
-
-
-
-<script src="app.js"> </script>
-<script src="script.js"> </script>
-
+<script src="sript.js"></script>
 </html>
+
